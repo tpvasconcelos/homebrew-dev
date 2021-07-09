@@ -10,6 +10,26 @@ class OneloginAwsCli < Formula
   # Pin to python3.7, because https://github.com/physera/onelogin-aws-cli/issues/143
   depends_on "python@3.7"
 
+  resource "pip" do
+    url "https://files.pythonhosted.org/packages/4d/0c/3b63fe024414a8a48661cf04f0993d4b2b8ef92daed45636474c018cd5b7/pip-21.1.3.tar.gz#sha256=b5b1eb91b36894bd01b8e5a56a422c2f3838573da0b0a1c63a096bb454e3b23f"
+    sha256 "b5b1eb91b36894bd01b8e5a56a422c2f3838573da0b0a1c63a096bb454e3b23f"
+  end
+
+  resource "six" do
+    url "https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl#sha256=8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"
+    sha256 "8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"
+  end
+
+  resource "python-dateutil" do
+    url "https://files.pythonhosted.org/packages/d4/70/d60450c3dd48ef87586924207ae8907090de0b306af2bce5d134d78615cb/python_dateutil-2.8.1-py2.py3-none-any.whl#sha256=75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a"
+    sha256 "75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a"
+  end
+
+  resource "urllib3" do
+    url "https://files.pythonhosted.org/packages/5f/64/43575537846896abac0b15c3e5ac678d787a4021e906703f1766bfb8ea11/urllib3-1.26.6-py2.py3-none-any.whl#sha256=39fb8672126159acb139a7718dd10806104dec1e2f0f6c88aab05d17df10c8d4"
+    sha256 "39fb8672126159acb139a7718dd10806104dec1e2f0f6c88aab05d17df10c8d4"
+  end
+
   resource "botocore" do
     url "https://files.pythonhosted.org/packages/f4/75/d7fd310ad8868e0ca2177677c79e652bd4068357ce6772625effabacd404/botocore-1.20.108-py2.py3-none-any.whl#sha256=7667ef69001708afa796d2e79910230715e8542a910820581bf4623a5d3b0d47"
     sha256 "7667ef69001708afa796d2e79910230715e8542a910820581bf4623a5d3b0d47"
