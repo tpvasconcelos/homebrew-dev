@@ -14,3 +14,7 @@ and then install
 ```shell
 brew install <FORMUlA>
 ```
+
+---
+
+This is a nais idea --> https://github.com/thanethomson/python-brewer
