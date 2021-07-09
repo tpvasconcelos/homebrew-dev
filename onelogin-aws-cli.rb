@@ -90,6 +90,11 @@ class OneloginAwsCli < Formula
     sha256 "27973dd4a904a4f13b263a19c866c13b92a39ed1c964655f025f3f8d3d75b804"
   end
 
+  resource "onelogin" do
+    url "https://files.pythonhosted.org/packages/04/23/fb10c1d89e0177f3f574fa83debe488db0f301a9d402c68471c6a725cde7/onelogin-1.9.1.tar.gz#sha256=40d145f65fc8d9bf39525e2f839e2fef27a5235396ac21f6e10d63b341f2a37e"
+    sha256 "40d145f65fc8d9bf39525e2f839e2fef27a5235396ac21f6e10d63b341f2a37e"
+  end
+
   def install
     virtualenv_install_with_resources
   end
