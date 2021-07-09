@@ -10,11 +10,6 @@ class OneloginAwsCli < Formula
   # Pin to python3.7, because https://github.com/physera/onelogin-aws-cli/issues/143
   depends_on "python@3.7"
 
-  resource "python-dateutil" do
-    url "https://files.pythonhosted.org/packages/d4/70/d60450c3dd48ef87586924207ae8907090de0b306af2bce5d134d78615cb/python_dateutil-2.8.1-py2.py3-none-any.whl#sha256=75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a"
-    sha256 "75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a"
-  end
-
   resource "urllib3" do
     url "https://files.pythonhosted.org/packages/5f/64/43575537846896abac0b15c3e5ac678d787a4021e906703f1766bfb8ea11/urllib3-1.26.6-py2.py3-none-any.whl#sha256=39fb8672126159acb139a7718dd10806104dec1e2f0f6c88aab05d17df10c8d4"
     sha256 "39fb8672126159acb139a7718dd10806104dec1e2f0f6c88aab05d17df10c8d4"
