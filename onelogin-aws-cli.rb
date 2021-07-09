@@ -92,6 +92,7 @@ class OneloginAwsCli < Formula
 
   def install
     virtualenv_install_with_resources
+    bin.install "#{libexec}/bin/onelogin-aws-login"
   end
 
   test do
