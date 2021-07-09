@@ -10,11 +10,6 @@ class OneloginAwsCli < Formula
   # Pin to python3.7, because https://github.com/physera/onelogin-aws-cli/issues/143
   depends_on "python@3.7"
 
-  resource "urllib3" do
-    url "https://files.pythonhosted.org/packages/5f/64/43575537846896abac0b15c3e5ac678d787a4021e906703f1766bfb8ea11/urllib3-1.26.6-py2.py3-none-any.whl#sha256=39fb8672126159acb139a7718dd10806104dec1e2f0f6c88aab05d17df10c8d4"
-    sha256 "39fb8672126159acb139a7718dd10806104dec1e2f0f6c88aab05d17df10c8d4"
-  end
-
   resource "botocore" do
     url "https://files.pythonhosted.org/packages/f4/75/d7fd310ad8868e0ca2177677c79e652bd4068357ce6772625effabacd404/botocore-1.20.108-py2.py3-none-any.whl#sha256=7667ef69001708afa796d2e79910230715e8542a910820581bf4623a5d3b0d47"
     sha256 "7667ef69001708afa796d2e79910230715e8542a910820581bf4623a5d3b0d47"
